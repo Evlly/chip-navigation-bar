@@ -160,7 +160,7 @@ internal class VerticalMenuItemView @JvmOverloads constructor(
             .start()
 
         countLabel.visibility = View.VISIBLE
-        //container.updateLayoutParams<MarginLayoutParams> { marginStart = 0 }
+        container.updateLayoutParams<MarginLayoutParams> { marginStart = 0 }
         icon.updateLayoutParams<MarginLayoutParams> {
             marginStart = doubleSpace
             marginEnd = doubleSpace
