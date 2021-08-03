@@ -160,7 +160,7 @@ internal class VerticalMenuItemView @JvmOverloads constructor(
             .start()
 
         countLabel.visibility = View.VISIBLE
-        container.updateLayoutParams<MarginLayoutParams> { marginStart = 0 }
+        //container.updateLayoutParams<MarginLayoutParams> { marginStart = 0 }
         icon.updateLayoutParams<MarginLayoutParams> {
             marginStart = doubleSpace
             marginEnd = doubleSpace
@@ -168,11 +168,11 @@ internal class VerticalMenuItemView @JvmOverloads constructor(
 
         containerForeground.cornerRadii = cornerArray
 
-        if (isSelected) {
+       /* if (isSelected) {
             containerBackground.cornerAnimation(radius, 0f).start()
         } else {
             containerBackground.cornerRadii = cornerArray
-        }
+        }*/
     }
 
     private fun GradientDrawable.cornerAnimation(from: Float, to: Float): Animator =
